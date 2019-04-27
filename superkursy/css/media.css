@@ -1,0 +1,176 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media screen and (max-width : 1199px) {
+	.advantages__item {
+		text-align: center;
+		vertical-align: top;
+		 
+	}
+	.advantages__pic {
+		display: block;
+		margin: 0 auto 15px auto;
+	}
+	.advantages__text {
+		display: block;
+	}
+	.experts__content {
+		width: 78%;
+	}
+	.experts__item {
+		min-height: 140px;
+	}
+	.btn {
+		font-size: 15px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media screen and (max-width : 991px) {
+	.advantages__item {
+		display: block;
+		text-align: left;
+		margin: 0 0 20px 0;
+
+	}
+	.advantages__pic {
+		display: inline-block;
+		margin: 0 15px 0 0;
+	}
+	.advantages__text {
+		display: inline-block;
+		 
+	}
+	.page-advantages {
+    padding: 42px 0px 20px 0;
+	}
+	.sform {
+		margin: 0 auto;
+		width: 50%;
+	}
+	.experts__content {
+		width: 80%;
+	}
+}
+
+/* Small Devices, Tablets */
+@media screen and (max-width : 767px) {
+	.logo, .contacts-tabs, 
+	.header-title, .header-slogan {
+		text-align: center;
+	}
+	.logo {
+		margin-bottom: 20px;
+	}
+	.tabs__content {
+		font-size: 31px;
+	}
+	.button-wrap {
+		text-align: center;
+	}
+	.discounts-tabs__name:first-child {
+		width: 43%;
+		padding: 20px 10px;
+	}
+	.discounts-tabs__name:nth-of-type(2) {
+		width: 57%;
+		padding: 20px 10px;
+	}
+	.advantages__item {
+		width: 262px;
+		margin: 0 auto 20px auto;
+	}
+	.experts__item {
+		 text-align: center;
+		 padding: 0 20px;
+		 margin-bottom: 30px;
+	}
+	.experts__pic {
+		display: block;
+		margin: 0 auto 10px auto;
+	}
+	.experts__content {
+		display: block;
+		width: 100%;
+	}
+	.sform {
+		width: 290px;
+	}
+	.optimal-h3 {
+		margin: 0 20px 27px 20px;
+	}
+	.where-h3 {
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	.where-tabs {
+		text-align: center;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media screen and (max-width : 480px) {
+	.header-title {
+		font-size: 55px;
+    	line-height: 1;
+	}
+	.header-slogan {
+		font-size: 31px;
+    	line-height: 1;
+	}
+	.contacts-tabs__content {
+		font-size: 31px;
+	}
+	h2 {
+		font-size: 40px;
+	}
+	.comments__item {
+		margin: 0;
+	}
+	.comments .owl-nav button.owl-next, 
+	.comments .owl-nav button.owl-prev {
+		top: 23px;
+	}
+	.optimal-h3 {
+		font-size: 24px;
+	}
+	.where-tabs__name {
+		padding: 14px 34px;
+	}
+	.where-h3 {
+		font-size: 40px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media screen and (min-width : 768px) {
+ 
+}
+
+/* Medium Devices, Desktops */
+@media screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media screen and (min-width : 1200px) {
+
+}
