@@ -56,7 +56,7 @@
 /* Small Devices, Tablets */
 @media screen and (max-width : 767px) {
 	.logo, .contacts-tabs, 
-	.header-title, .header-slogan {
+	h1, .header-slogan {
 		text-align: center;
 	}
 	.logo {
@@ -110,7 +110,7 @@
 
 /* Extra Small Devices, Phones */
 @media screen and (max-width : 480px) {
-	.header-title {
+	h1 {
 		font-size: 55px;
     	line-height: 1;
 	}
