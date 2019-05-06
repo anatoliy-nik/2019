@@ -1,0 +1,150 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+	.navbar-inverse .navbar-nav > li > a {
+		padding: 15px 5px;
+	}
+	.adv-item__text {
+		font-size: 11px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+	.navbar-inverse .navbar-nav > li > a {
+		padding: 15px 10px;
+	}
+	.navbar-nav {
+    	max-width: 470px;
+    	margin-top: 5px;
+	}
+	.navbar-brand {
+		margin-top: 13px;
+	}
+	.navbar-right {
+		margin-top: 39px;
+	}
+	.page-slider .carousel .item {
+	 	min-height: 420px;
+	}
+	.advantages {
+		margin-bottom: 20px;
+	}
+	.content {
+		margin-bottom: 0;
+	}
+	.f-tel {
+		font-size: 17px;
+	}
+	 
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.navbar-brand {
+		margin-top: 0px;
+
+	}
+
+	.navbar-nav {
+    	max-width: inherit;
+    	 
+	}
+	.navbar-right {
+		margin-top: 0px;
+		text-align: center;
+	}
+	
+	.page-slider .carousel .item {
+	 	min-height: 420px;
+	}
+	footer {
+		text-align: center;
+	}
+	.developer {
+		text-align: center;
+	}
+	.f-slogan::before {
+		display: none;
+	}
+	.logo, .f-slogan, .f-contacts{
+		margin-bottom: 10px;
+	}
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px) {
+	.carousel-caption .top-title {
+		font-size: 28px;
+		margin-bottom: 10px;
+	}
+	.lead {
+		font-size: 19px;
+	}
+	.page-slider .carousel .item {
+	 	min-height: 480px;
+	}
+	.content .col-xs-6 {
+		width: 100%;
+	}
+	.advantages .col-xs-6 {
+		width: 50%;
+	}
+	 
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

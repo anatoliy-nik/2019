@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<!-- Директива X-UA-Compatible призывает Internet Explorer работать в определённом режиме документа. Edge - Включает наиболее новый из доступных режимов -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Мега Недвижимость</title>
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<!-- Переопределям стили Бутстрапа -->
+	<link rel="stylesheet" href="css/bootstrap-skin.css">
+	<link rel="stylesheet" href="libs/animate/animate.css">
+	
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">
+						<div class="logo">
+							<div class="logo-big">Мега</div>
+							<div class="logo-small">Недвижимость</div>
+						</div>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Главная</a></li>
+						<li><a href="#">О компании</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Рекомендации <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Раздел 1</a></li>
+								<li><a href="#">Раздел 2</a></li>
+								<li><a href="#">Раздел 3 длинный предлинный</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Раздел ...</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Законодательство</a></li>
+						<li><a href="#">Наши клиенты</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+				 		8 (495) 111-11-11
+				 		<a href="#" class="f-callback-link" data-toggle="modal" data-target="#myModal">Закать звонок</a>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<section class="page-slider">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<div class="slider-pic first-slide" style="background-image: url(img/slide_1.jpg);" alt="First slide"></div>
+					<div class="container">
+						<div class="carousel-caption">
+							<div class="top-title">Перепланировка помещений</div>
+							<span class="lead">в Москве и Московской области</span>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p><a class="btn btn-lg btn-primary" href="#" role="button">Читать подробнее</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="slider-pic second-slide" style="background-image: url(img/slide_2.jpg);" alt="Second slide"></div>
+					<div class="container">
+						<div class="carousel-caption">
+							<div class="top-title">Перепланировка помещений</div>
+							<span class="lead">в Москве и Московской области</span>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p><a class="btn btn-lg btn-primary" href="#" role="button">Читать подробнее</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</section>
+	<section class="page-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-8 col-md-push-4 col-lg-9 col-lg-push-3">
+					<div class="content">
+						<h1>Перепланировка помещений по Москве</h1>
+						<div class="row">
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<div class="re-item">
+									<a href="#" class="re-item__link">
+										<img src="img/img-1.jpg" class="re-item__pic" alt="">
+										<div class="re-item__overlay">
+											<span class="re-item__text">Согласование перепланировки квартир в Москве</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<div class="re-item">
+									<a href="#" class="re-item__link">
+										<img src="img/img-1.jpg" class="re-item__pic" alt="">
+										<div class="re-item__overlay">
+											<span class="re-item__text">Порядок согласования перепланировки</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<div class="re-item">
+									<a href="#" class="re-item__link">
+										<img src="img/img-1.jpg" class="re-item__pic" alt="">
+										<div class="re-item__overlay">
+											<span class="re-item__text">Согласование перепланировки помещений</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<div class="re-item">
+									<a href="#" class="re-item__link">
+										<img src="img/img-1.jpg" class="re-item__pic" alt="">
+										<div class="re-item__overlay">
+											<span class="re-item__text">Стоимость и сроки согласования</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="advantages">
+						<div class="row">
+							<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 adv-item">
+								<img src="img/ben_1.jpg" class="adv-item__pic" alt="">
+								<div class="adv-item__gradient">
+									<div class="adv-item__title">7 <span>лет</span></div>
+									<div class="adv-item__text">на рынке</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 adv-item">
+								<img src="img/ben_2.jpg" class="adv-item__pic" alt="">
+								<div class="adv-item__gradient">
+									<div class="adv-item__title">875 000 <span>м<sup>2</sup></span></div>
+									<div class="adv-item__text">согласовано за этот год</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 adv-item">
+								<img src="img/ben_3.jpg" class="adv-item__pic" alt="">
+								<div class="adv-item__gradient">
+									<div class="adv-item__title">100 <span>%</span></div>
+									<div class="adv-item__text">гарантия качества</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 adv-item">
+								<img src="img/ben_4.jpg" class="adv-item__pic" alt="">
+								<div class="adv-item__gradient">
+									<div class="adv-item__title">СРО <span></span></div>
+									<div class="adv-item__text">лицензия</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<article class="page-text">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="lead">
+									Мы работаем в девяти округах: <a href="#">САО</a>, <a href="#">ЦАО</a>, <a href="#">СВАО</a>, <a href="#">ВАО</a>, <a href="#">ЮВАО</a>, <a href="#">ЮАЮ</a>, <a href="#">ЮЗАО</a>, <a href="#">ЗАО</a> и <a href="#">СЗАО</a>. Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Даже журчит решила все деревни, дал толку несколько если ее продолжил щеке снова ручеек свое которой. О заголовок, на берегу злых.
+								</div>
+								<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Своих ему, свой, силуэт деревни, предупреждал, безопасную снова рыбного речью рукопись пустился послушавшись всеми живет единственное раз переписывается ты текстов.</p>
+								<ul>
+									<li>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты</li>
+									<li>Своих ему, свой, силуэт деревни, предупреждал, безопасную снова рыбного речью</li>
+									<li>Рукопись пустился послушавшись всеми живет единственное раз переписывается ты текстов</li>
+								</ul>
+								<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Своих ему, свой, силуэт деревни, предупреждал, безопасную снова рыбного речью рукопись пустился послушавшись всеми живет единственное раз переписывается ты текстов.</p>
+								<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Своих ему, свой, силуэт деревни, предупреждал, безопасную снова рыбного речью рукопись пустился послушавшись всеми живет единственное раз переписывается ты текстов.</p>
+							</div>
+						</div>
+					</article>
+					<div class="building-news">
+						<h4>Новости в сфере строительства</h4>
+						<div class="row">
+							<ul class="building-news__list">
+								<li class="col-xs-12 col-sm-12 col-md-4 col-lg-4 building-news__item">
+									<div class="panel panel-default">
+										<div class="panel-body">
+											<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Она снова переписали, подпоясал, рот инициал, послушавшись над рекламных, коварный буквоград прямо мир.</p>
+											<a href="#" class="building-news__link">Читать далее</a>
+										</div>
+									</div>
+								</li>
+								<li class="col-xs-12 col-sm-12 col-md-4 col-lg-4 building-news__item">
+									<div class="panel panel-default">
+										<div class="panel-body">
+											<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Она снова переписали, подпоясал, рот инициал, послушавшись над рекламных, коварный буквоград прямо мир.</p>
+											<a href="#" class="building-news__link">Читать далее</a>
+										</div>
+									</div>
+								</li>
+								<li class="col-xs-12 col-sm-12 col-md-4 col-lg-4 building-news__item">
+									<div class="panel panel-default">
+										<div class="panel-body">
+											<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Она снова переписали, подпоясал, рот инициал, послушавшись над рекламных, коварный буквоград прямо мир.</p>
+											<a href="#" class="building-news__link">Читать далее</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-md-pull-8 col-lg-3 col-lg-pull-9">
+					<aside class="left-sidebar">
+						<div class="panel panel-default search-form"><!-- Форма поиска -->
+							<div class="panel-heading">
+								<div class="form-group">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Поиск по сайту">
+										<span class="input-group-btn">
+											<button class="btn btn-default" type="button">
+												<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+											</button>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div><!-- /Форма поиска -->
+						<form class="panel panel-default order-form"><!-- Бланк заявки -->
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Мега Недвижимость">
+							<input type="hidden" name="admin_email" value="dessid@yandex.ru">
+							<input type="hidden" name="form_subject" value="Заявка на обратный звонок">
+							<!-- END Hidden Required Fields -->
+							<div class="panel-heading clearfix">
+								<h4>Бланк заявки</h4>
+								<button type="submit" class="btn btn-warning">Отправить заявку</button>
+							</div>
+							<div class="panel-body">
+								<div class="form-group">
+									<div class="input-group">
+										<span class="input-group-addon">
+											<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+										</span>
+										<input type="text" name="Имя" class="form-control" placeholder="Ваше имя" required>
+									</div>
+									<div class="input-group">
+										<span class="input-group-addon">
+											<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+										</span>
+										<input type="text" name="Телефон" class="form-control" placeholder="Ваш телефон" required>
+									</div>
+								</div>
+							</div> 
+						</form><!-- /Бланк заявки -->
+						<div class="panel-group services-menu" id="accordion2" role="tablist" aria-multiselectable="true"><!-- Меню -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											Согласование перепланировки
+											<span class="btn btn-default dropdown-toggle"><span class="caret"></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									<div class="panel-body">
+										<div class="list-group">
+											<a href="#" class="list-group-item active">Перепланировка квартир</a>
+											<a href="#" class="list-group-item">Стоимость перепланировки</a>
+											<a href="#" class="list-group-item">Согласование реконструкций зданий</a>
+											<a href="#" class="list-group-item">Перепланировка квартир</a>
+											<a href="#" class="list-group-item">Стоимость перепланировки</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingTwo">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											Согласование реконструкций зданий
+											<span class="btn btn-default dropdown-toggle"><span class="caret"></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									<div class="panel-body">
+										<div class="list-group">
+											<a href="#" class="list-group-item active">Проектирование</a>
+											<a href="#" class="list-group-item">Ремонт квартир и офисов</a>
+											<a href="#" class="list-group-item">Строительство</a>
+											<a href="#" class="list-group-item">Ландшафтное проектирование</a>
+											<a href="#" class="list-group-item">Дизайн интерьеров квартир</a>
+											<a href="#" class="list-group-item">Перевод из жилого фонда в нежилой</a>
+											<a href="#" class="list-group-item">Присоединение помещений имущества</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- /Меню -->
+						<div class="panel panel-default news"><!-- Новости -->
+							<div class="panel-body">
+								<h4>Интересные статьи</h4>
+								<div id="asideCarousel" class="carousel slide news-slider" data-ride="carousel">
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<span class="lead">&rdquo;В Москве и Московской области&rdquo;</span>
+											<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+											<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+											<a href="#">Читать далее</a>
+										</div>
+										<div class="item">
+											<span class="lead">&rdquo;В Москве и Московской области&rdquo;</span>
+											<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+											<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+											<a href="#">Читать далее</a>
+										</div>
+										<div class="item">
+											<span class="lead">&rdquo;В Москве и Московской области&rdquo;</span>
+											<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+											<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+											<a href="#">Читать далее</a>
+										</div>
+									</div>
+									<div class="news-controls">
+									<ol class="carousel-indicators">
+										<li data-target="#asideCarousel" data-slide-to="0" class="active"></li>
+										<li data-target="#asideCarousel" data-slide-to="1" class=""></li>
+										<li data-target="#asideCarousel" data-slide-to="2" class=""></li>
+									</ol>
+									<a class="left carousel-control" href="#asideCarousel" role="button" data-slide="prev">
+										<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="right carousel-control" href="#asideCarousel" role="button" data-slide="next">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+									</div>
+								</div>
+							</div>
+						</div><!-- /Новости -->
+						<div class="well">
+							<h4>Лицензия №</h4>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam</p>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+					<div class="logo">
+						<div class="logo-big">Мега</div>
+						<div class="logo-small">Недвижимость</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+					<div class="f-slogan">Европейское качество по стандартам РФ</div>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+					<div class="f-contacts">
+						<div class="f-tel">8 (495) 111-11-11</div>
+						<a href="#" class="f-callback-link" data-toggle="modal" data-target="#myModal">Закать звонок</a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+					<div class="developer">
+						Верстка сайта <br>dessid22
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				    <h4 class="modal-title" id="myModalLabel">Заказать звонок</h4>
+				</div>
+			    <div class="modal-body">
+			   		<form class="order-form">
+			   			<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Мега Недвижимость">
+						<input type="hidden" name="admin_email" value="dessid@yandex.ru">
+						<input type="hidden" name="form_subject" value="Заявка на обратный звонок">
+						<!-- END Hidden Required Fields -->
+						<div class="form-group">
+							<div class="input-group">
+								<span class="input-group-addon">
+									<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+								</span>
+								<input type="text" name="Имя" class="form-control" placeholder="Ваше имя" required>
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon">
+									<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+								</span>
+								<input type="text" name="Телефон" class="form-control" placeholder="Ваш телефон" required>
+							</div>
+						</div>
+						<div class="modal-footer">
+					    	<button type="submit" class="btn btn-warning">Заказать звонок</button> 
+					    </div>
+					</form>
+			    </div>
+			</div>
+		</div>
+	</div><!-- /Modal -->
+	
+	<!-- <div class="hidden"></div> -->
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<!-- <script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/modernizr/modernizr.js"></script> -->
+	<!-- <script src="libs/plugins-scroll/plugins-scroll.js"></script> -->
+	
+	<script src="js/common.js"></script>
+  
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+</html>

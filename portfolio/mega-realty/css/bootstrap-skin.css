@@ -1,0 +1,230 @@
+ .carousel .item {
+	 
+	min-height: 380px;
+	background-color: #777;
+}
+body {
+	color: #242424;
+	font-size: 13px;
+}
+h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	text-transform: uppercase;
+	font-family: "OpenSansBold", sans-serif;
+}
+h1, .h1 {
+	font-size: 25px;
+}
+h2, .h2 {
+	font-size: 20px;
+}
+h3, .h3 {
+	font-size: 18px;
+}
+h4, .h4 {
+	font-size: 15px;
+}
+h5, .h5 {
+	font-size: 12px;
+}
+h6, .h6 {
+	font-size: 10px;
+}
+.lead {
+	font-size: 23px;
+}
+a, a:hover, a:focus {
+	color: #f37e38;
+}
+.navbar-inverse {
+	background-color: #242424;
+	border: none;
+	border-radius: 0;
+}
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus {
+	background: linear-gradient(to bottom, #ef5f31, #f4883b);
+	color: #fff;
+}
+.navbar-nav {
+	font-size: 14px;
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: #fff;
+
+}
+
+.navbar-inverse .navbar-nav > .open > a, 
+.navbar-inverse .navbar-nav > .open > a:hover, 
+.navbar-inverse .navbar-nav > .open > a:focus {
+	color: #f27837;
+	background: none;
+}
+.dropdown-menu > li > a:hover, 
+.dropdown-menu > li > a:focus {
+	background: linear-gradient(to bottom, #ef5f31, #f4883b);
+	color: #fff;
+}
+.dropdown-menu .divider {
+	margin: 4px 0;
+}
+.navbar-nav > li > a {
+	padding: inherit 22px;
+}
+.carousel-indicators .active {
+	background-color: #f27937;
+	border: none;
+}
+.carousel-control.left,
+.carousel-control.right {
+	background-color: rgba(0,0,0,.5);
+	background-image: none;
+}
+.carousel-control {
+	width: 50px;
+	
+}
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right, 
+.carousel-control .icon-prev,
+ .carousel-control .icon-next {
+ 	font-size: 15px;
+ }
+ .carousel-caption {
+ 	text-align: left;
+ 	top: 60px;
+ 	text-shadow: none;
+ }
+ .carousel-caption h1 {
+ 	text-transform: none;
+ 	font-size: 36px;
+ 	margin: 0 0 5px 0;
+
+ }
+ .carousel-caption p {
+ 	font-size: 15px;
+ 	max-width: 450px;
+ 	margin-bottom: 20px;
+ }
+ .carousel-caption .btn {
+ 	background-color: transparent;
+ 	border-color: #fff;
+ }
+ .carousel-caption .btn:hover,
+ .carousel-caption .btn:focus,
+ .carousel-caption .btn:active {
+ 	background-color: #f27937;
+ 	border-color: #fff;
+ }
+ .panel {
+ 	-webkit-box-shadow: none;
+ 	box-shadow: none;
+ }
+ .panel-default > .panel-heading {
+ 	background-color: #ff910c;
+ 	border-color: #ff910c;
+ 	-webkit-box-shadow: 0 0 0 1px #ff910c;
+ 	box-shadow: 0 0 0 1px #ff910c;
+ }
+.btn-warning {
+	background-color: #ffcc51;
+	border-color: #c97713;
+	color: #242424;
+}
+.input-group-addon {
+	background-color: #ff910c;
+	border-color: #ff910c;
+}
+.form-control {
+	-webkit-box-shadow: none;
+ 	box-shadow: none;
+}
+.form-control:focus {
+	-webkit-box-shadow: none;
+ 	box-shadow: none;
+ 	border-color: #ff910c;
+}
+.input-group-btn > .btn {
+	background-color: #ededed;
+
+}
+.panel-title > a, 
+.panel-title > small, 
+.panel-title > .small, 
+.panel-title > small > a, 
+.panel-title > .small > a {
+	color: #242424;
+	font-size: 12px;
+}
+.panel-collapse .panel-body {
+	background-color: #f1e9e0;
+	 
+} 
+.panel-default {
+	border: 1px solid #f1e9e0;
+}
+.panel-group .panel + .panel {
+    margin-top: 1px;
+}
+.list-group {
+	margin-bottom: 0;
+}
+.list-group-item {
+	color: #242424;
+	text-transform: uppercase;
+	font-size: 12px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px dashed #242424;
+	margin: 0px 0px 20px 0px;
+    padding: 0; 
+}
+.list-group-item:last-child {
+	/*margin: 0px 0px 0px 0px;*/
+}
+a.list-group-item,
+a.list-group-item:focus
+ {
+	 
+	color: #242424;
+}
+a.list-group-item:hover
+ {
+	 
+	color: #242424;
+	 
+}
+.list-group-item.active,
+.list-group-item.active:focus {
+	background-color: transparent;
+	color: #242424;
+	/*border: none;
+	border-bottom: 1px dashed #242424;*/
+}
+.list-group-item.active:hover {
+	background-color: transparent;
+	color: #242424;
+	/*border: none;
+	border-bottom: 1px dashed transparent;*/
+ }
+ .well {
+ 	-webkit-box-shadow: none;
+ 	box-shadow: none;
+ 	background-color: #f1e9e0;
+ 	border: 1px solid #d5cdc3;
+ }
+.breadcrumb {
+	background-color: transparent;
+	padding: 0;
+}
+.breadcrumb a {
+	color: #b5b5b5;
+}
+.breadcrumb > .active {
+	color: #b5b5b5;
+}
+.breadcrumb > li + li:before {
+	 
+	content: "\003E";
+}
