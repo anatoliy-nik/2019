@@ -50,10 +50,13 @@ h1 {
     font-size: 1em;
     color: rgba(0,0,0,0.6);
     font-weight: 700;
+    margin-left: -8px;
+    margin-right: -8px;
 
 }
 .p-item__text {
 	padding: 0em 1em;
+    height: 92px;
 }
 .p-item__link {
 	display: inline-block;

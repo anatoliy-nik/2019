@@ -12,9 +12,15 @@
 
 /* Small Devices, Tablets */
 @media screen and (max-width : 767px) {
-	
+	.p-item__text {
+    height: 50px;
+	}
 }
-
+@media screen and (max-width : 600px) {
+	.p-item__text {
+    height: 92px;
+	}
+}
 /* Extra Small Devices, Phones */
 @media screen and (max-width : 480px) {
 	div[class*="col-xs"] {
@@ -24,6 +30,9 @@
    	width: 70%;
    	margin: 0 auto 1em auto;
     }
+    .p-item__text {
+    height: 50px;
+	}
 }
 
 /* Custom, iPhone Retina */
