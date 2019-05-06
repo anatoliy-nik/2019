@@ -556,3 +556,13 @@ footer {
     border-bottom: 2px solid #003469;
     padding: 10px 0px;
 }
+.developer {
+    color: #4f4f4f;
+    line-height: 1;
+    font-size: 13px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
