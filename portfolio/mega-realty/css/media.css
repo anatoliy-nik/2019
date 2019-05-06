@@ -16,14 +16,15 @@
 		padding: 15px 10px;
 	}
 	.navbar-nav {
-    	max-width: 470px;
-    	margin-top: 5px;
+    	max-width: 390px;
+    	margin-top: 0px;
+    	margin-left: 35px;
 	}
 	.navbar-brand {
 		margin-top: 13px;
 	}
 	.navbar-right {
-		margin-top: 39px;
+		margin-top: 22px;
 	}
 	.page-slider .carousel .item {
 	 	min-height: 420px;
@@ -49,7 +50,7 @@
 
 	.navbar-nav {
     	max-width: inherit;
-    	 
+    	margin-right: 35px;
 	}
 	.navbar-right {
 		margin-top: 0px;
