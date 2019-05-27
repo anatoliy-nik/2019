@@ -1,0 +1,225 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+  .basic-menu__item {
+    margin-right: 8px; 
+	}
+    .big-cirle__item {
+    max-width: 182px;
+    margin: 42px 55px;
+	}
+	.big-cirle_dark .big-cirle__item {
+	max-width: 160px;
+    margin: 42px 68px;
+	}
+	.cards__item {
+	width: 214px;
+	min-height: 408px;
+	}
+	.work__item {
+		margin-bottom: 6px;
+	}
+	.work__item:nth-of-type(4) {
+		margin-left: 0px;
+	}
+	header .tel, footer .tel {
+		margin-left: 50px;
+	}
+	}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  	.top-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    width: 290px;
+    text-align: right;
+    background-color: #1c242c;
+    padding: 0px;
+    z-index: 1;
+		}
+	
+	.basic-menu__item {
+		display: block;
+		margin-right: 0;
+		border-bottom: 1px solid #222C36;
+	}
+	.basic-menu__item:last-child {
+		border-bottom: none;
+	}
+	.basic-menu__link {
+		display: block;
+		padding: 15px 20px;
+		text-transform: uppercase;
+		font-size: 13px;
+		text-decoration: none;
+		transition: all .8s ease;
+	}
+	.basic-menu__link:hover {
+		text-decoration: none;
+		background-color: #273646;
+	}
+	.basic-menu__item_act a{
+		text-decoration: none;
+	}
+	.burger-click {
+		display: inline-block;
+     	}
+    header .tel {
+		margin-left: 0px;
+	}
+    h1 {
+    	line-height: 1;
+    }
+	.short-essence {
+    margin-top: 70px;
+	}
+	.big-cirle__item
+	 {
+     margin: 42px 20px;
+	}
+	.big-cirle_dark .big-cirle__item {
+    max-width: 160px;
+    margin: 42px 32px;
+	}
+	.cards {
+		padding: 0;
+	}
+	.work__item:nth-of-type(3) {
+		margin-left: 0px;
+	}
+	.work__item:nth-of-type(4) {
+		margin-left: -40px;
+	}
+	.certificates__item {
+		margin-bottom: 30px;
+	}
+	footer .tel {
+		margin-left: 0;
+	}
+	}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important; } 
+	.short-essence {
+    margin-top: -40px;
+    margin-bottom: 40px;
+    text-align: center;
+	}
+	.basic-form {
+		width: 290px;
+		margin: 0 auto;
+	}
+	.big-cirle__item, .big-cirle_dark .big-cirle__item
+	 {
+     max-width: 100%;
+     margin-top: 0;
+     margin-bottom: 25px;
+	}
+	.big-cirle .col-lg-4:nth-of-type(6) .big-cirle__item {
+     border-bottom: 1px solid #dee1e5;
+     color: #111;
+	}
+	.triangle-scales {
+		opacity: .2;
+	}
+	.big-cirle_dark .col-lg-4:nth-of-type(7) .big-cirle__item {
+		margin-top: 0;
+	}
+	.small-circle-wrap {
+		display: none;
+	}
+	.big-cirle_dark .col-lg-4:nth-of-type(8) .big-cirle__item {
+    margin-top: 0px;
+	}
+	.big-cirle_dark .big-cirle__content {
+    top: 0;
+	}
+	.cards {
+		padding: 0 12%;
+	}
+	.cards__item {
+		display: block;
+		width: 100%;
+		padding: 40px 20px 20px 20px;
+		margin-bottom: 20px;
+		min-height: 280px;
+	}
+	.work__item {
+		display: block;
+		margin: 0 auto 6px auto !important;
+	}
+	.professionals .section-head {
+    text-align: center;
+	}
+	.professionals h2 {
+    text-align: center;
+	}
+	.professionals h2::after {
+    margin: 30px auto;
+	}
+	footer .tel {
+		position: relative;
+		margin:0 auto;
+	}
+	footer {
+		text-align: center;
+	}
+	}
+
+@media only screen and (max-width: 479px) {
+	header .tel {
+		margin-left: -20px;
+		font-size: 16px;
+	}
+	.triangle-logo {
+		display: none;
+	}
+	.bottom-triangle {
+		bottom: 310px;
+	}
+	.bottom-rectangle {
+		height: 310px;
+	}
+	.services__item {
+    width: 133px;
+    margin: 0px 5px 80px 5px;
+	}
+	.btn {max-width: 290px;
+	}
+	.slider .owl-nav button.owl-prev,
+	.slider .owl-nav button.owl-next {
+		top: 9%;
+	}
+	}
+	
+/*==========  Mobile First Method  ==========*/
+@media only screen and (min-width: 992px) {
+	.top-nav {
+		display: block !important;
+	}
+	a {
+		outline: none !important;
+	}
+	}
+ 
+/*@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src*=".svg"] {
+    width: 100%; 
+  }
+}*/
