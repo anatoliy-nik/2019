@@ -164,7 +164,7 @@ header {
   text-transform: uppercase;
   letter-spacing: -10px;
   line-height: 1; }
-.logo:hover {
+.logo:hover, .logo:focus {
    color: #fff;
    text-decoration: none;
 }
