@@ -1,0 +1,162 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+  .contacts__phone {
+    font-size: 16px; }
+  .advantages__text {
+    width: 85%; }
+  .advantages__item {
+    margin-bottom: 20px; }
+  .col-md-6:last-of-type .advantages__item {
+    margin-bottom: 0; }
+  .links-box__pic {
+    margin-right: 8px; }
+  .links-box__gov {
+    width: 65%; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  .logo {
+    text-align: center;
+  }
+  .basic-menu.sf-menu a {
+    padding: 32px 27px; }
+  .top-panel .top-box {
+    display: none; }
+  .contacts {
+    text-align: center; }
+  .slider .owl-item img {
+    display: none; }
+  .slider__title {
+    font-size: 32px; }
+  .slider-nav {
+    top: 300px; }
+  .slider__item {
+    padding-top: 270px; }
+  .advantages__text {
+    width: 80%; }
+  .page-news .col-sm-12 .btn-wrap {
+    position: absolute;
+    top: 0;
+    right: 15px; }
+  .page-links .col-sm-12 .btn-wrap {
+    position: absolute;
+    top: 0;
+    right: 15px; }
+  footer .contacts {
+    display: none; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .burger-box {
+    display: block; }
+  .top-line {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    width: 270px;
+    height: 100vh;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%); }
+    .top-line.mobile {
+      -webkit-transform: translateX(0%);
+          -ms-transform: translateX(0%);
+              transform: translateX(0%); }
+  .top-line .col-xs-12 {
+    padding: 0; }
+  .basic-menu__item {
+    display: block; }
+  .basic-menu.sf-menu li {
+    border-bottom: 1px solid #391f65; }
+  .basic-menu.sf-menu a {
+    padding: 16px 27px; }
+  .basic-menu.sf-menu ul {
+    width: 100%; }
+    .basic-menu.sf-menu ul ul {
+      width: 100%;
+      -webkit-transform: translate(-100%, 0);
+          -ms-transform: translate(-100%, 0);
+              transform: translate(-100%, 0); }
+  .slider-wrap {
+    top: 0; }
+  .slider-nav {
+    padding: 0 3%; }
+  .contacts__mail {
+    display: none; }
+  .contacts__phone {
+    margin-bottom: 20px; }
+  .advantages__item {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%; }
+  .card-box__item {
+    margin: 0 10%; }
+  .page-news .card-box__item, .page-links .card-box__item {
+    margin-bottom: 20px; }
+  .page-news h2, .page-links h2 {
+    text-align: center; }
+  .page-news .col-sm-12 .btn-wrap, .page-links .col-sm-12 .btn-wrap {
+    display: none; }
+  .col-xs-12:last-of-type .card-box__item {
+    margin-bottom: 0; }
+  .links-box__item {
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 10px; }
+  .page-links .links-box__item {
+    margin-bottom: 30px !important; }
+  .page-links .col-lg-4:last-of-type .links-box__item {
+    margin-bottom: 0 !important; }
+  footer {
+    padding-right: 10%;
+    padding-left: 10%; }
+    footer .col-xs-0 .top-box {
+      display: none; }
+  .logo-text {
+    margin-bottom: 20px; }
+  .top-panel {
+    padding: 100px 0px 55px 0;
+  }
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 489px) {
+  .col-xs-6 {
+    width: 100%; }
+  .logo {
+    margin-bottom: 20px; }
+  .slider__item {
+    padding-top: 380px; }
+  .slider-nav {
+    top: 420px; }
+  .slider .btn-wrap {
+    text-align: center; }
+  .slider__content {
+    text-align: center; }
+  .advantages__text {
+    width: 70%; }
+  #callback {
+    max-width: 290px; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
+
+/*==========  Mobile First Method  ==========*/
