@@ -1,7 +1,7 @@
 $(document).ready(function() { 
-	// .ready() - ñîáûòèå ïîëíîé çàãðóçêè DOM (ÁÅÇ ìóëüòèìåäèà)
+	// .ready() - событие полной загрузки DOM (БЕЗ мультимедиа)
 
-	$("#my-menu").mmenu({ // Èíèöèàëèçàöèÿ è íàñòðîéêà Mmenu (â êîäå !ÄÎ ðàáîòû ñ API Mmenu)
+	$("#my-menu").mmenu({ // Инициализация и настройка Mmenu (в коде !ДО работы с API Mmenu)
 		extensions: [ 'widescreen', 'theme-black', 'effect-listitems-slide', 'pagedim-black'],
 		offCanvas: {
 			position : 'right'
@@ -11,39 +11,39 @@ $(document).ready(function() {
 		}
 	});
 
-	var apiM = $("#my-menu").data("mmenu"); // ×åðåç API Mmenu îïðåäåëÿåì ñîñòîÿíèå .hamburger
+	var apiM = $("#my-menu").data("mmenu"); // Через API Mmenu определяем состояние .hamburger
 	apiM.bind("opened", function() { 
-		// .bind - îïðåäåëÿåò ñîñòîÿíèå. Åñëè ìåíþ îòêðûòî, òî:
+		// .bind - определяет состояние. Если меню открыто, то:
 		$(".hamburger").addClass("is-active");
 		}).bind("closed", function() {
-		// .bind - îïðåäåëÿåò ñîñòîÿíèå. Åñëè ìåíþ çàêðûòî, òî:
+		// .bind - определяет состояние. Если меню закрыто, то:
 		$(".hamburger").removeClass("is-active");
 		});
 
-	function servicesImgHight() { // Âûñîòà êàðòèíêè ðàâíà âûñîòå êîíòåíòà
+	function servicesImgHight() { // Высота картинки равна высоте контента
 		$(".services-slider__item").each(function() {
-			// .each() - öèêë ïî âûáðàííûì ýë-òàì èç âñåãî äîêóìåíòà
+			// .each() - цикл по выбранным эл-там из всего документа
 			var it = $(this);
 			var contentHeight = it.find(".services-slider__content").outerHeight();
-			// .find() - íàõîäèì ýë-ò, .outerHeight() - áåðåì åãî âíåøíþþ âûñîòó
+			// .find() - находим эл-т, .outerHeight() - берем его внешнюю высоту
 			var img = it.find(".services-slider__image");
-			// .find() - íàõîäèì ýë-ò
+			// find() - находим эл-т
 			img.css("min-height", contentHeight);
-			// çàäàåì min-height äëÿ êàðòèíêè
+			// задаем min-height для картинки
 		});
 	};
 
-	$(".services-slider").on('initialized.owl.carousel', function() { // â êîäå !ÄÎ èíèöèàëèçàöèè ïëàãèíà
-		// .on() - óñòàíàâëèâàåò îáðàáîò÷èê ñîáûòèÿ íà âûáðàííûé ýë-ò
-		// initialized.owl.carousel - ñîáûòèå ïîëíîé èíèöèàëèçàöèè OwlCarousel
+	$(".services-slider").on('initialized.owl.carousel', function() { // задаем min-height для картинки
+		// .on() - устанавливает об аботчик события на выб анный л-т
+		// initialized.owl.carousel - событие полной инициализации OwlCarousel
 		setTimeout(function() {
 			servicesImgHight()
-			// âûïîëíÿåì servicesImgHight() ïîñëå ïîëíîé èíèöèàëèçàöèè OwlCarousel (à íå ïðè $(document).ready)
+			// выполняем servicesImgHight() после полной инициализации OwlCarousel (а не при $(document).ready)
 		}, 100);
-		// äàåì äîïîëíèòåëüíî çàäåðæêó íà servicesImgHight(), äëÿ ïîäñòðàõîâêè
+		// даем дополнительно задержку на servicesImgHight(), для подстраховки
 	});
 
-	$(".services-slider").owlCarousel({ // Èíèöèàëèçàöèÿ è íàñòðîéêè .services-slider
+	$(".services-slider").owlCarousel({ // Инициализация и наст ойки .services-slider
 		margin: 0,
 		nav: true,
 		navText: [
@@ -74,43 +74,43 @@ $(document).ready(function() {
     	}
 	});
 
-	$('.services-slider__content').equalHeights(); // Îäèíàêîâàÿ âûñîòà
-	$('footer .col-lg-3').equalHeights(); // Îäèíàêîâàÿ âûñîòà
+	$('.services-slider__content').equalHeights(); // Одинаковая высота 
+	$('footer .col-lg-3').equalHeights(); //  
 
-	function lastWordToSpan() { // Äîáàâëÿåì span ê ïîñëåäíåìó ñëîâó â çàãîëîâêå
+	function lastWordToSpan() { // Добавляем span к последнему слову в заголовке
 		$(".services-slider__name").each(function() {
-			// .each() - öèêë ïî âûáðàííûì ýë-òàì èç âñåãî äîêóìåíòà
+			// .each() - цикл по выбранным эл-там из всего документа
 			var it = $(this);
 			var text = it.text().trim();
-			// .text() - òåêñò âûáðàííîãî ýë-òà
-			// .trim() - óäàëÿåò ñèìâîëû ïðîáåëîâ, òàáîâ è ïåðåíîñîâ ñòðîê èç íà÷àëà è êîíöà ñòðîêè
+			// .text() - текст выбранного л-та
+			// .trim() - удаляет символы пробелов, табов и переносов строк из начала и конца строки
 			var words = text.split(' ');
-			// .split(s) - ðàçáèâàåò ñòðîêó â ìàññèâ, ðàçáèâ åå ïî ðàçäåëèòåëþ s
+			// .split(s) - разбивает строку в массив, разбив ее по разделителю s
    			var lastWord = words.pop();
-   			// .pop() - èçâëåêàåò ïîñëåäíèé ýë-ò ìàññèâà. Ïðè ýòîì ýë-ò óäàëÿåòñÿ èç ìàññèâà
+   			// .pop() - извлекает последний эл-т массива. При этом эл-т удаляется из массива
   			words.push('<span>' + lastWord + '</span>');
-  			// .push() - äîáàâëÿåò ýë-ò â êîíåö ìàññèâà
+  			// .push() - добавляет эл-т в конец массива
    			it.html(words.join(' '));
-   			// .join(s) - ñêëåèâàåò ìàññèâ â ñòðîêó, s áóäåò ðàçäåëèòåëåì â ñòðîêå
+   			// .join(s) - склеивает массив в строку, s будет разделителем в строке
 		});
 	};
 	lastWordToSpan();
 
-	function firstWordToSpan() { // Äîáàâëÿåì span ê ïåðâîìó ñëîâó â çàãîëîâêå
+	function firstWordToSpan() { // Добавляем span к первому слову в заголовке
 		$(".section-title").each(function() {
-			// .each() - öèêë ïî âûáðàííûì ýë-òàì èç âñåãî äîêóìåíòà
+			// .each() - цикл по выбранным эл-там из всего документа
 			var it = $(this);
 			var text = it.text().trim();
-			// .text() - òåêñò âûáðàííîãî ýë-òà
-			// .trim() - óäàëÿåò ñèìâîëû ïðîáåëîâ, òàáîâ è ïåðåíîñîâ ñòðîê èç íà÷àëà è êîíöà ñòðîêè
+			// .text() - текст выбранного эл-та
+			// .trim() - удалят символы пробелов, табов и пеносов строк из начала и конца строки
 			var words = text.split(' ');
-			// .split(s) - ðàçáèâàåò ñòðîêó â ìàññèâ, ðàçáèâ åå ïî ðàçäåëèòåëþ s
+			// .split(s) - разбивает строку в массив, разбив по разделителю s
    			var firstWord = words.shift();
-   			// .shift() - èçâëåêàåò ïåðâûé ýë-ò ìàññèâà. Ïðè ýòîì ýë-ò óäàëÿåòñÿ èç ìàññèâà
+   			// .shift() - извлекает первый эл-т массива. При этом эл-т удаляется из массива
   			words.unshift('<span>' + firstWord + '</span>');
-  			// .unshift() - äîáàâëÿåò ýë-ò â íà÷àëî ìàññèâà
+  			// .unshift() - добавляет эл-т в начало массива
    			it.html(words.join(' '));
-   			// .join(s) - ñêëåèâàåò ìàññèâ â ñòðîêó, s áóäåò ðàçäåëèòåëåì â ñòðîêå
+   			// .join(s) - склеивает массив в строку, s будет разделителем в строке
 		});
 	};
 	firstWordToSpan();
