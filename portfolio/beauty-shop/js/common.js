@@ -233,6 +233,7 @@ $(document).ready(function() {
     	}
 	});
 
+	// Скрываем прелоадер после загрузки DOM
 	$('.preloader').fadeOut();
 
 });
