@@ -47,7 +47,7 @@ $(document).ready(function() {
 		margin: 0,
 		nav: true,
 		navText: [
-			'<i class="fa fa-angle-double-left" aria-hidden="true"></i>', 
+			'<i class="fa fa-angle-double-left" aria-hidden="true"></i>',
 			'<i class="fa fa-angle-double-right" aria-hidden="true"></i>'
 			],
 		loop: true,
@@ -115,7 +115,7 @@ $(document).ready(function() {
 	};
 	firstWordToSpan();
 
-	$('.gallery').fotorama({ // Íàñòðîéêè Fotorama
+	$('.gallery').fotorama({ // Настройки Fotorama
 		minheight: '350',
 		nav: 'thumbs',
 		thumbwidth: '110',
@@ -132,39 +132,39 @@ $(document).ready(function() {
 		arrows: 'always'
 	});
 
-	$(window).scroll(function() { // Äåëàåì âèäèìîé êíîïêó "íàâåðõ"
-		// $(window) - îêíî áðàóçåðà
-		// .scroll() - ñîáûòèå ïðîêðóòêè
+	$(window).scroll(function() { // Делаем видимой кнопку "наверх"
+		// $(window) - окно браузера
+		// .scroll() - событие прокрутки
 		if($(this).scrollTop() > $(this).height()) {
-		//.scrollTop() - çíà÷åíèå îòñòóïà ïðîêðóòêè ñâåðõó
+		//.scrollTop() - значение отступа прокрутки сверху
 			$('.to-top').addClass('active');
 		} else {
 			$('.to-top').removeClass('active');
 		}
 	});
 
-	$('.to-top').click(function() { // Ñêðîëë íàâåðõ
+	$('.to-top').click(function() { // Скролл наверх
 		$("html, body").animate({scrollTop: 0}, "slow");
-		// .animate() - ïðîèçâîëüíàÿ àíèìàöèÿ íàáîðà CSS ñâîéñòâ
+		// .animate() - произвольная анимация набора CSS свойств
 		return false;
-		// return false - äëÿ îñòàíîâêè ðàñïðîñòðàíåíèÿ ñîáûòèÿ .click() íà äðóãèå ýëåìåíòû
+		// return false - для остановки распространения события .click() на другие элементы
 	});
 
-	$("form").submit(function() { //E-mail Ajax ôîðìà
+	$("form").submit(function() { //E-mail Ajax
 		var th = $(this);
 		$.ajax({
 			type: "POST",
 			url: "../mail.php",
 			data: th.serialize()
-		}).done(function() { // Ïîñëå îòïðàâêè äàííûõ âûïîëíèòü ô-èè:
-			// Âûâîäèì ñîîáùåíèå îá óñïåøíîé îòïðàâêå
+		}).done(function() { // После отправки данных выполнить ф-ии:
+			// Выводим сообщение об успешной отправке
 			$(".form-message").addClass("success");
 			setTimeout(function() {
-				// Óäàëÿåì ñîîáùåíèå îá óñïåøíîé îòïðàâêå ÷åðåç 2000 ìñ
+				// Удаляем сообщение об успешной отправке через 2000 мс
 				$(".form-message").removeClass("success");
-				// Ñáðàñûâàåì çíà÷åíèÿ ïîëåé ÷åðåç 2000 ìñ
+				// Сбрасываем значения полей через 2000 мс
 				th.trigger("reset");
-				// Çàêðûâàåì magnificPopup ÷åðåç 2000 ìñ
+				// Закрываем magnificPopup через 2000 мс
 				var magnificPopup = $.magnificPopup.instance;
 				magnificPopup.close();
 			}, 2000);
@@ -172,9 +172,9 @@ $(document).ready(function() {
 		return false;
 	});
 
-	$('.basic-form__select').styler(); // Èíèöèàëèçàöèÿ FormStyler
+	$('.basic-form__select').styler(); // Инициализация FormStyler
 
-	$(".comments-slider").owlCarousel({ // Èíèöèàëèçàöèÿ è íàñòðîéêè .comments-slider
+	$(".comments-slider").owlCarousel({ // Инициализация и настройки .comments-slider
 		margin: 0,
 		nav: false,
 		loop: true,
@@ -202,7 +202,7 @@ $(document).ready(function() {
     	}
 	});
 
-	$(".partners-slider").owlCarousel({ // Èíèöèàëèçàöèÿ è íàñòðîéêè .partners-slider
+	$(".partners-slider").owlCarousel({ // Инициализация и настройки .partners-slider
 		margin: 50,
 		nav: true,
 		navText: [
@@ -238,8 +238,8 @@ $(document).ready(function() {
 
 });
 
-$(window).on('load', function() { // Ïðåëîàäåð çàãðóçêè
-	// $(window) - îêíî áðàóçåðà
-	// .on() - óñòàíàâëèâàåò îáðàáîò÷èê ñîáûòèÿ íà âûáðàííûé ýë-ò
-	// .load() - ñîáûòèå ïîëíîé çàãðóçêè DOM (ÂÊËÞ×Àß ìóëüòèìåäèà)
+$(window).on('load', function() {
+	// $(window) - окно браузера
+	// .on() - устанавливает обработчик события на выбранный эл-т
+	// .load() - событие полной загрузки DOM
 });
