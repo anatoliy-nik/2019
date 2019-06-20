@@ -86,8 +86,7 @@ $(document).ready(function() {
 		return false;
 	});
 
+	// Скрываем прелоадер при загрузке DOM
+	$('.preloader').fadeOut();
+
 });
-
-$(window).on('load', function() {
-
-})
