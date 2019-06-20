@@ -1,5 +1,6 @@
 $(document).ready(function() { 
 	// .ready() - событие полной загрузки DOM (БЕЗ мультимедиа)
+
 	$("#my-menu").mmenu({ // Инициализация и настройка Mmenu (в коде !ДО работы с API Mmenu)
 		extensions: [ 'widescreen', 'theme-black', 'effect-listitems-slide', 'pagedim-black'],
 		offCanvas: {
@@ -164,8 +165,8 @@ $(document).ready(function() {
 				// Сбрасываем значения полей через 2000 мс
 				th.trigger("reset");
 				// Закрываем magnificPopup через 2000 мс
-				// var magnificPopup = $.magnificPopup.instance;
-				// magnificPopup.close();
+				var magnificPopup = $.magnificPopup.instance;
+				magnificPopup.close();
 			}, 2000);
 		});
 		return false;
@@ -232,44 +233,12 @@ $(document).ready(function() {
     	}
 	});
 
-	//SVG Fallback
-	// if(!Modernizr.svg) {
-	// 	$("img[src*='svg']").attr("src", function() {
-	// 		return $(this).attr("src").replace(".svg", ".png");
-	// 	});
-	// };
-
-		//Проверка Magnific PopUp
-	// $(".open-popup-link").magnificPopup({
-	//   type:'inline'
-	// });
-
-	//Проверка Animate
-	// $("h1").animated("fadeInRight", "fadeInLeft");
-
-	// Проверка Waypoints
-	// $("h2").waypoint(function() {
-	// 	$("h2").css({'transform': 'scale(2)', 'text-align':'center'});
-	// });
-
-	// try { // Chrome Smooth Scroll
-	// 	$.browserSelector();
-	// 	if($("html").hasClass("chrome")) {
-	// 		$.smoothScroll();
-	// 	}
-	// } catch(err) {
-
-	// };
-
-// 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
-// });
-
 });
 
 $(window).on('load', function() { // Прелоадер загрузки
 	// $(window) - окно браузера
 	// .on() - устанавливает обработчик события на выбранный эл-т
 	// .load() - событие полной загрузки DOM (ВКЛЮЧАЯ мультимедиа)
-	$('.preloader').delay(100).fadeOut('slow');
+	$('.preloader').fadeOut();
 	// .fadeOut() - cкрывает эл-т путем затухания до прозрачного состояния
 });
