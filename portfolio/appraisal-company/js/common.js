@@ -1,4 +1,4 @@
-$( document ).ready(function(){
+$(document).ready(function() {
 	
 	// Меню
 	 $(".basic-menu").superfish({
@@ -40,14 +40,6 @@ $( document ).ready(function(){
 		$("#callback input[name=form-name]").val($(this).data("what-form"));
 	});
 
-	//Проверка Animate
-	// $("h1").animated("fadeInRight", "fadeInLeft");
-
-	// Проверка Waypoints
-	// $("h2").waypoint(function() {
-	// 	$("h2").css({'transform': 'scale(2)', 'text-align':'center'});
-	// });
-
 	// Настройки .slider
 	var owl = $(".slider");
 	owl.owlCarousel({
@@ -69,13 +61,6 @@ $( document ).ready(function(){
 	$(".slider-prev").click(function() {
 		owl.trigger("prev.owl.carousel");
 	});
-
-	//SVG Fallback
-	// if(!Modernizr.svg) {
-	// 	$("img[src*='svg']").attr("src", function() {
-	// 		return $(this).attr("src").replace(".svg", ".png");
-	// 	});
-	// };
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
@@ -101,23 +86,8 @@ $( document ).ready(function(){
 		return false;
 	});
 
-	//Chrome Smooth Scroll (Плавный скролл в Хроме)
-	try {
-		$.browserSelector();
-		if($("html").hasClass("chrome")) {
-			$.smoothScroll();
-		}
-	} catch(err) {
-
-	};
-
-	// Отмена перетаскивания ссылок и картинок в документе
-	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 });
 
 $(window).on('load', function() {
 
-	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
-
-});
+})
