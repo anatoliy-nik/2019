@@ -1,6 +1,6 @@
 body {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 12pt;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
     font-weight: 400;
 }
 * {
@@ -12,7 +12,7 @@ ul, li {
 }
 .page-main {
 	padding: 8em 0em;
-    background: #FFF;
+    background: #fff;
 }
 h1, h2, h3 {
 	margin: 0;
@@ -36,7 +36,7 @@ h1 {
 .p-item {
 	text-align: center;
     color: rgba(0,0,0,0.5);
-    margin-bottom: 4em;
+    margin-bottom: 5em;
 }
 .p-item__pic {
 	display: block;
@@ -50,31 +50,9 @@ h1 {
     font-size: 1em;
     color: rgba(0,0,0,0.6);
     font-weight: 700;
-    margin-left: -8px;
-    margin-right: -8px;
-
 }
 .p-item__text {
-	padding: 0em 1em;
-    height: 92px;
-}
-.p-item__link {
-	display: inline-block;
-    margin-top: 2em;
-    padding: 0.9em 2em;
-   background: #8DCB89;
-     border-radius: 5px;
-    letter-spacing: 0.20em;
-    line-height: 1.8em;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 1em;
-    color: #FFF;
-}
-.p-item__link:hover, .p-item__link:focus {
-	text-decoration: none;
-	color: #FFF;
+    height: 4em;
 }
 
 .p-item__date {
