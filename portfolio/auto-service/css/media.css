@@ -1,0 +1,193 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.warranty__text {
+		font-size: 10px;
+	}
+	.top-menu__link {
+		padding: 20px 20px 20px 50px;
+	}
+	.services__link, .services__pointer {
+		width: 146px;
+	}
+	.services__item {
+		margin-right: 10px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.services__link, .services__pointer {
+		width: 163px;
+	}
+	.services__pointer {
+		width: 0;
+		height: 0;
+	}
+	
+	.warranty {
+		display: none;
+	}
+	.top-menu__link {
+		padding: 20px 15px 20px 46px;
+	}
+	.services__item {
+		margin: 0px 18px;
+        margin-bottom: 36px;
+	}
+	.services__item:last-child {
+		margin-right: 18px;
+	}
+	.services {
+		text-align: center;
+	}
+	.counter {
+		text-align: center;
+		margin-top: 25px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.address {
+		display: none;
+	}
+	.logo__pic {
+    position: absolute;
+    top: -20px;
+    left: 100px; 
+     
+	}
+	.top-menu__item {
+		width: 33%;
+		text-align: center;
+	}
+	.top-menu__link {
+		background-image: none;
+		padding: 20px 23px 20px 23px;
+		text-decoration: underline;
+		border-right: none;
+		border-left: none;
+	}
+	.content-headline::before {
+    background-image: none;
+	}
+	.content-headline::after {
+    background-image: none;
+	}
+	.pic-wrap {
+		display: none;
+	}
+	.works-text {
+		width: 100%;
+		padding: 0;
+	}
+	footer {
+		text-align: center;
+	}
+	.works-callback, .works-text {
+		margin-top: 20px;
+		text-align: center;
+	}
+	.works-headline {
+		text-align: center;
+	}
+	.sitename {
+		margin-bottom: 20px;
+	}
+	.services-headline, 
+	.content-headline,
+	.works-headline {
+		font-size: 28px;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.works-headline {
+		line-height: 1;
+	}
+	.advantage-item__pic {
+		 
+	}
+	div[class*="col-xs"] {
+    	width: 100%;
+    }
+	.tel {
+		display: none;
+	}
+	.red-button, .costing {
+		display: block;
+		width: 240px;
+		margin: 10px auto;
+	}
+	.logo {
+		width: 100%;
+
+	}
+	.logo__pic {
+		left: 50%;
+		 
+	}
+	.top-menu__item {
+		width: 50%;
+ 
+	}
+	.services-headline::before {
+    background-image: none;
+	}
+	.services-headline::after {
+    background-image: none;
+	}
+	.services__item {
+		width: 80%;
+		text-align: center;
+	}
+	.services__link {
+		margin: 0 auto;		
+	}
+	.advantage-item {
+
+	}
+	h1 {
+		font-size: 38px;
+	}
+	.services-headline, .content-headline, .works-headline {
+		font-size: 26px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
