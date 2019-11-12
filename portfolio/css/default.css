@@ -1,6 +1,6 @@
 body {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
+	font-size: 16px;
     font-weight: 400;
 }
 * {
@@ -26,7 +26,7 @@ h1 {
 }
 .slogan {
 	letter-spacing: 0.15em;
-    text-transform: uppercase;
+  /*  text-transform: uppercase;*/
     font-weight: 400;
     font-size: 1.1em;
     color: #6F6F6F;
@@ -36,25 +36,50 @@ h1 {
 .p-item {
 	text-align: center;
     color: rgba(0,0,0,0.5);
-    margin-bottom: 5em;
+    min-height: 350px;
 }
 .p-item__pic {
 	display: block;
     width: 100%;
-    margin: 0 0 2em 0;
+    margin: 0 0 1em 0;
 	border: 1px solid rgba(0,0,0,.1);
+    
 }
+
+.p-item a {
+    position: relative;
+    display: block;
+    outline :none;
+}
+
+.p-item a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0);
+    transition: all .5s ease;
+}
+
+.p-item a:hover::before {
+    background-color: rgba(0,0,0, 0);
+}
+
 .p-item__title {
 	margin-bottom: 1em;
-    text-transform: uppercase;
+   /* text-transform: uppercase;*/
     font-size: 1em;
     color: rgba(0,0,0,0.6);
     font-weight: 700;
 }
 .p-item__text {
-    height: 4em;
+   margin-bottom: 1em;
+   font-size: .9em;
 }
 
 .p-item__date {
-    font-size: 11px;
+   font-size: .7em;
+   color: rgba(0,0,0,0.4);
 }
